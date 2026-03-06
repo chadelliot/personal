@@ -1,0 +1,14 @@
+<svg class="story-svg" viewBox="0 0 1200 680" preserveAspectRatio="none" id="storySvg">
+      <!-- Arrow 1: Build→Scale — arcs BELOW and around Build node, enters Scale from left -->
+      <path id="arrow1" class="draw-path"
+        d="M 200 220 C 240 320 370 320 460 278"/>
+      <polygon id="arrowhead1" class="draw-arrow"
+        points="450,268 468,280 456,292" fill="#2FA37F"/>
+
+      <!-- Arrow 2: Scale→Impact — arcs BELOW Scale node, enters Impact from left -->
+      <path id="arrow2" class="draw-path"
+        d="M 620 420 C 680 510 790 500 880 458"/>
+      <polygon id="arrowhead2" class="draw-arrow"
+        points="870,448 888,458 872,470" fill="#2FA37F"/>
+
+    </svg>
