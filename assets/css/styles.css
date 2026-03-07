@@ -1245,15 +1245,15 @@ footer { padding:80px; background:var(--charcoal); border-top:1px solid #444; di
   opacity:.9;
 }
 
-.flow-arrow svg{
-  width:20px;
-  height:14px;
+.flow-arrow svg {
+    width: 40px;
+    height: 40px;
 }
 
 .flow-arrow-label{
-  font-family:'DM Mono', monospace;
-  font-size:9px;
+  font-size:13px;
   letter-spacing:.08em;
+  line-height: 15px;
   color:var(--muted);
   white-space:nowrap;
 }
@@ -1702,3 +1702,4 @@ footer { padding:80px; background:var(--charcoal); border-top:1px solid #444; di
     padding:22px 20px !important;
   }
 }
+
