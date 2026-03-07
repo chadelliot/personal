@@ -2489,3 +2489,188 @@ body > :is(div,section,nav):not([class]):not([id]){display:none !important;}
   .footer-divider { display: none; }
   .footer-stat    { padding: 0; text-align: left !important; }
 }
+
+
+/* ===== Revenue Activation + logo + NYSE final patch ===== */
+
+/* Pillar 2 logos: no pill background, original colors */
+.pillar-logo-row{
+  gap:18px !important;
+  align-items:center !important;
+}
+.pillar-brand-logo{
+  height:52px !important;
+  width:auto !important;
+  max-width:none !important;
+  padding:0 !important;
+  border:none !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  filter:none !important;
+  opacity:1 !important;
+}
+.pillar-brand-logo.logo-gap{
+  height:56px !important;
+}
+
+/* Revenue tab eyebrow label styling only; change the actual text in HTML from
+   "Activation" to "Revenue Activation" */
+.activation-hero .hero-eyebrow{
+  letter-spacing:.18em;
+}
+
+/* Hero metrics: value + label side-by-side and vertically centered */
+.activation-hero .hero-metrics{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:1px !important;
+  background:var(--border) !important;
+  border:1px solid var(--border) !important;
+}
+.activation-hero .hero-metric{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:12px !important;
+  min-height:72px !important;
+  margin:0 !important;
+  padding:18px 20px !important;
+  border-right:none !important;
+  background:var(--off-black) !important;
+}
+.activation-hero .metric-value{
+  margin:0 !important;
+  flex:0 0 auto !important;
+}
+.activation-hero .metric-label{
+  margin:0 !important;
+  display:block !important;
+  text-align:left !important;
+  line-height:1.35 !important;
+  flex:0 1 auto !important;
+  max-width:140px !important;
+}
+
+/* System architecture block readability */
+.flow-block{
+  padding:28px 32px !important;
+}
+.flow-diagram{
+  gap:12px !important;
+}
+.flow-node{
+  min-height:96px !important;
+  padding:16px 16px 14px !important;
+}
+.flow-node-title{
+  font-size:15px !important;
+}
+.flow-node-sub{
+  font-size:12px !important;
+  line-height:1.45 !important;
+}
+.flow-arrow-label{
+  font-size:10px !important;
+}
+
+/* Remove bottom stat bar; add breathing room before Career Timeline */
+.activation-footer{
+  display:none !important;
+}
+#activation{
+  padding-bottom:60px !important;
+}
+
+/* NYSE row: lock it to metric-row style; no more floating/overlapping badge */
+.timeline-metrics{
+  overflow:hidden !important;
+  border-radius:4px !important;
+}
+.timeline-featured-link{
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:12px !important;
+  width:100% !important;
+  padding:14px 18px !important;
+  margin:0 !important;
+  min-height:unset !important;
+  background:var(--off-black) !important;
+  border:none !important;
+  border-bottom:1px solid var(--border) !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  text-decoration:none !important;
+  color:inherit !important;
+}
+.timeline-featured-left{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px !important;
+  min-width:0 !important;
+}
+.timeline-featured-icon{
+  width:26px !important;
+  height:26px !important;
+  flex:0 0 26px !important;
+  border-radius:999px !important;
+  display:grid !important;
+  place-items:center !important;
+  background:rgba(47,163,127,.10) !important;
+  color:var(--gold) !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+}
+.timeline-featured-text{
+  font-family:'Inter',sans-serif !important;
+  font-size:10px !important;
+  letter-spacing:.14em !important;
+  text-transform:uppercase !important;
+  color:var(--muted) !important;
+  text-decoration:none !important;
+}
+.timeline-featured-cta{
+  color:var(--gold) !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+}
+.timeline-featured-star{
+  position:absolute !important;
+  top:8px !important;
+  right:8px !important;
+  width:18px !important;
+  height:18px !important;
+  display:grid !important;
+  place-items:center !important;
+  border-radius:999px !important;
+  background:var(--gold) !important;
+  color:#fff !important;
+  font-size:10px !important;
+  line-height:1 !important;
+  box-shadow:none !important;
+  z-index:2 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .pillar-brand-logo{
+    height:42px !important;
+  }
+  .pillar-brand-logo.logo-gap{
+    height:46px !important;
+  }
+  .activation-hero .hero-metric{
+    justify-content:flex-start !important;
+  }
+  .activation-hero .metric-label{
+    max-width:none !important;
+  }
+  .flow-block{
+    padding:22px 20px !important;
+  }
+}
+
