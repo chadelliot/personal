@@ -216,7 +216,7 @@ section { position:relative; z-index:1; }
    DATA ORCHESTRATION — 0.xyz STYLE
 ════════════════════════════════════════ */
 #data-orchestration {
-  padding: 120px 80px;
+  padding: 120px 0px;
   background: var(--off-black);
   overflow: hidden;
 }
@@ -419,7 +419,7 @@ section { position:relative; z-index:1; }
    RFM SEGMENTATION VISUALIZATION
 ════════════════════════════════════════ */
 #segmentation {
-  padding: 120px 80px;
+  padding: 0;
   background: var(--black);
 }
 
